@@ -1,6 +1,6 @@
 # Front-end Developer Test
 
-Instructions for this test: https://docs.google.com/document/d/1kj2ZUHSaoJuUwYBnVfahHdz5wCJ7vu86iF-tNs0BS5c/edit#
+Instructions for this test: https://docs.google.com/document/d/1Jb7FcxSnqPRGkNbutVlfRBZPDZWCIJJSXoHbi7YDJT4/edit?usp=sharing
 
 To setup and get started, do the following:
 
