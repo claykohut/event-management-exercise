@@ -1,0 +1,41 @@
+// Sidebar Left
+
+.sidebar-left {
+
+	form {
+		margin-bottom:20px;
+		padding:30px;
+		background:#fff;
+		border:1px solid #ccc;
+		@include border-radius(3px);
+
+		input {
+			width:100%;
+			margin-bottom: 20px;
+			border: 1px solid #C3C3C3;
+			font-size: 18px;
+			padding: 15px;
+			@include border-radius(3px);
+		}
+	}
+
+	.add-button {
+		font-family: 'proxima_nova_rgbold';
+		font-size: 16px;
+		line-height: 16px;
+		text-transform: uppercase;
+		@include border-radius(3px);
+		background: $accent-color;
+		color: #fff;
+		border: none;
+		width: auto;
+		padding: 17px 15px 17px;
+	}
+
+	.welcome-message {
+		padding:30px;
+		background:#eaeaea;
+		border:1px solid #ccc;
+	}
+
+}

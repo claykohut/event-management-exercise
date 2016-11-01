@@ -1,0 +1,16 @@
+{
+  "guests": [
+    {
+      "email": "claykohut@gmail.com",
+      "name": "Clay Kohut"
+    },
+    {
+      "email": "test@test.com",
+      "name": "Test User"
+    },
+    {
+      "email": "another@test.com",
+      "name": "Another Test"
+    }
+  ]
+}

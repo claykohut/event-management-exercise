@@ -1,0 +1,9 @@
+<div class="list-wrap" ui-sortable="sortableOptions" ng-model="items">
+	<div class="list-item" ng-repeat="guest in items track by $index">
+		<div class="drag-handle-wrap">
+			<div class="inner-handle"></div>
+		</div>
+		<div class="item-info">{{ guest.name }} ({{ guest.email }})</div>
+		<span class="close-icon" ng-click="guestList.removeAttendee(guest.email, $index)"></span>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+.alert-banner {
+	.inner-wrap {
+		background: $accent-color;
+		position: relative;
+		color: #fff;
+		text-align: center;
+		padding: 30px 60px 30px 30px;
+		font-size: 22px;
+		margin-bottom: 28px;
+		border-radius: 3px;
+		.close-icon {
+			opacity: 0.7;
+			right: 26px;
+			&:before, &:after {
+				background: #fff;
+			}
+		}
+	}
+}

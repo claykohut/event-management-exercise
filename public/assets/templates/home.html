@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+
+		<alert-banner class="col-xs-12 col-sm-12" alert="guestList.alert" ng-if="guestList.alert.active && guestList.alert.message"></alert-banner>
+
+		<div class="sidebar-left col-xs-12 col-sm-4">
+    			
+			<form ng-submit="guestList.addAttendee()">
+			  <div class="title">Add an Attendee</div>
+
+			  <input type="text" name="username" placeholder="username" ng-model="guestList.newGuest.name">
+			  <input type="text" name="email" placeholder="email" ng-model="guestList.newGuest.email">
+			  <input class="add-button" type="submit" value="Add Attendee">
+			</form>
+				
+		</div>
+		<div class="main-content col-xs-12 col-sm-8">
+			<div class="registrants">
+				<div class="title">Attendee List</div>
+				
+				<div class="empty-wrap" ng-if="guestList.guests.length == 0">There are no registrants</div>
+
+    			<guest-list-wrap  items="guestList.guests" ng-if="guestList.guests.length > 0"></guest-list-wrap>
+
+			</div>
+		</div>
+	</div>
+</div>

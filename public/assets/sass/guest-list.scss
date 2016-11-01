@@ -1,0 +1,52 @@
+.list-wrap {
+	.list-item {
+	    position: relative;
+		font-size: 22px;
+		color: #7D7D7D;
+		line-height: 30px;
+		padding: 15px 44px 15px 15px;
+		background: #FAFAFA;
+		border: 1px solid #c3c3c3;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		word-wrap: normal;
+		overflow: hidden;
+		&:not(:first-child){
+			margin-top: 20px;
+		}
+		.item-info {
+			padding-left: 42px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		.drag-handle-wrap {
+			position: absolute;
+			width: 20px;
+			height: 13px;
+			top: 50%;
+			@include transform(translate3d(0,-50%,0));
+			cursor: move;
+			.inner-handle, .inner-handle:before, .inner-handle:after {
+				width: 100%;
+				height: 3px;
+				position: absolute;
+				background: #B6B6B6;
+			}
+			.inner-handle {
+				top: 50%;
+				@include transform(translate3d(0,-50%,0));
+				&:before, &:after {
+					content: '';
+					display: inline-block;
+				}
+				&:before {
+					top: -5px;
+				}
+				&:after {
+					top: 5px;
+				}
+			}
+		}
+	}
+}
